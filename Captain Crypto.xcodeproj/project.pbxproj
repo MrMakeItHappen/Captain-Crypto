@@ -8,18 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		CD3EC49C21E7CFA900BB9AB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3EC49B21E7CFA900BB9AB2 /* AppDelegate.swift */; };
-		CD3EC49E21E7CFA900BB9AB2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3EC49D21E7CFA900BB9AB2 /* ViewController.swift */; };
 		CD3EC4A321E7CFAC00BB9AB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD3EC4A221E7CFAC00BB9AB2 /* Assets.xcassets */; };
 		CD3EC4A621E7CFAC00BB9AB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD3EC4A421E7CFAC00BB9AB2 /* LaunchScreen.storyboard */; };
+		CD3EC4AE21E7D2CD00BB9AB2 /* CryptoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3EC4AD21E7D2CD00BB9AB2 /* CryptoTableViewController.swift */; };
+		CD3EC4B021E7D43E00BB9AB2 /* CoinData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3EC4AF21E7D43E00BB9AB2 /* CoinData.swift */; };
+		CD3EC4B221E7DA6D00BB9AB2 /* Futured.TTF in Resources */ = {isa = PBXBuildFile; fileRef = CD3EC4B121E7D8D100BB9AB2 /* Futured.TTF */; };
+		CD3EC4B421E7DB2000BB9AB2 /* Credits in Resources */ = {isa = PBXBuildFile; fileRef = CD3EC4B321E7DB2000BB9AB2 /* Credits */; };
+		CD3EC4B821E7F11B00BB9AB2 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3EC4B721E7F11B00BB9AB2 /* UIViewExtension.swift */; };
+		F465154282CABDABCFBC50C5 /* Pods_Captain_Crypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A99D359C2E20D56FF918A591 /* Pods_Captain_Crypto.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		448CB8364C332D0DBD621B5B /* Pods-Captain Crypto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Captain Crypto.release.xcconfig"; path = "Pods/Target Support Files/Pods-Captain Crypto/Pods-Captain Crypto.release.xcconfig"; sourceTree = "<group>"; };
+		8DD8A6A098DBA0B4B8B47823 /* Pods-Captain Crypto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Captain Crypto.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Captain Crypto/Pods-Captain Crypto.debug.xcconfig"; sourceTree = "<group>"; };
+		A99D359C2E20D56FF918A591 /* Pods_Captain_Crypto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Captain_Crypto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD3EC49821E7CFA900BB9AB2 /* Captain Crypto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Captain Crypto.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD3EC49B21E7CFA900BB9AB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CD3EC49D21E7CFA900BB9AB2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CD3EC4A221E7CFAC00BB9AB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD3EC4A521E7CFAC00BB9AB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD3EC4A721E7CFAC00BB9AB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD3EC4AD21E7D2CD00BB9AB2 /* CryptoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTableViewController.swift; sourceTree = "<group>"; };
+		CD3EC4AF21E7D43E00BB9AB2 /* CoinData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinData.swift; sourceTree = "<group>"; };
+		CD3EC4B121E7D8D100BB9AB2 /* Futured.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = Futured.TTF; sourceTree = "<group>"; };
+		CD3EC4B321E7DB2000BB9AB2 /* Credits */ = {isa = PBXFileReference; lastKnownFileType = text; path = Credits; sourceTree = "<group>"; };
+		CD3EC4B721E7F11B00BB9AB2 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F465154282CABDABCFBC50C5 /* Pods_Captain_Crypto.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		367F506FA513BB1995902CF4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A99D359C2E20D56FF918A591 /* Pods_Captain_Crypto.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		524FBD1520711B8F0EAD146F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8DD8A6A098DBA0B4B8B47823 /* Pods-Captain Crypto.debug.xcconfig */,
+				448CB8364C332D0DBD621B5B /* Pods-Captain Crypto.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CD3EC48F21E7CFA900BB9AB2 = {
 			isa = PBXGroup;
 			children = (
 				CD3EC49A21E7CFA900BB9AB2 /* Captain Crypto */,
 				CD3EC49921E7CFA900BB9AB2 /* Products */,
+				524FBD1520711B8F0EAD146F /* Pods */,
+				367F506FA513BB1995902CF4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,10 +85,14 @@
 			isa = PBXGroup;
 			children = (
 				CD3EC49B21E7CFA900BB9AB2 /* AppDelegate.swift */,
-				CD3EC49D21E7CFA900BB9AB2 /* ViewController.swift */,
+				CD3EC4AF21E7D43E00BB9AB2 /* CoinData.swift */,
+				CD3EC4AD21E7D2CD00BB9AB2 /* CryptoTableViewController.swift */,
 				CD3EC4A221E7CFAC00BB9AB2 /* Assets.xcassets */,
 				CD3EC4A421E7CFAC00BB9AB2 /* LaunchScreen.storyboard */,
 				CD3EC4A721E7CFAC00BB9AB2 /* Info.plist */,
+				CD3EC4B121E7D8D100BB9AB2 /* Futured.TTF */,
+				CD3EC4B721E7F11B00BB9AB2 /* UIViewExtension.swift */,
+				CD3EC4B321E7DB2000BB9AB2 /* Credits */,
 			);
 			path = "Captain Crypto";
 			sourceTree = "<group>";
@@ -68,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CD3EC4AA21E7CFAC00BB9AB2 /* Build configuration list for PBXNativeTarget "Captain Crypto" */;
 			buildPhases = (
+				A464F8DE6006B49A200989B9 /* [CP] Check Pods Manifest.lock */,
 				CD3EC49421E7CFA900BB9AB2 /* Sources */,
 				CD3EC49521E7CFA900BB9AB2 /* Frameworks */,
 				CD3EC49621E7CFA900BB9AB2 /* Resources */,
+				2FDA1D4207E63D400F6B4FE4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -119,6 +157,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD3EC4B221E7DA6D00BB9AB2 /* Futured.TTF in Resources */,
+				CD3EC4B421E7DB2000BB9AB2 /* Credits in Resources */,
 				CD3EC4A621E7CFAC00BB9AB2 /* LaunchScreen.storyboard in Resources */,
 				CD3EC4A321E7CFAC00BB9AB2 /* Assets.xcassets in Resources */,
 			);
@@ -126,13 +166,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2FDA1D4207E63D400F6B4FE4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Captain Crypto/Pods-Captain Crypto-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Captain Crypto/Pods-Captain Crypto-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A464F8DE6006B49A200989B9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Captain Crypto-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CD3EC49421E7CFA900BB9AB2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD3EC49E21E7CFA900BB9AB2 /* ViewController.swift in Sources */,
+				CD3EC4B021E7D43E00BB9AB2 /* CoinData.swift in Sources */,
+				CD3EC4AE21E7D2CD00BB9AB2 /* CryptoTableViewController.swift in Sources */,
 				CD3EC49C21E7CFA900BB9AB2 /* AppDelegate.swift in Sources */,
+				CD3EC4B821E7F11B00BB9AB2 /* UIViewExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +349,7 @@
 		};
 		CD3EC4AB21E7CFAC00BB9AB2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DD8A6A098DBA0B4B8B47823 /* Pods-Captain Crypto.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -286,6 +368,7 @@
 		};
 		CD3EC4AC21E7CFAC00BB9AB2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 448CB8364C332D0DBD621B5B /* Pods-Captain Crypto.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
