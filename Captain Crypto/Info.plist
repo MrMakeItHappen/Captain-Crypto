@@ -37,9 +37,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>UIAppFonts</key>
-	<array>
-		<string>Futured.TTF</string>
-	</array>
+	<key>NSFaceIDUsageDescription</key>
+	<string>Biometrics required to Secure/Unsecure App.</string>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
 </dict>
 </plist>

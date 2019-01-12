@@ -12,9 +12,9 @@
 		CD3EC4A621E7CFAC00BB9AB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD3EC4A421E7CFAC00BB9AB2 /* LaunchScreen.storyboard */; };
 		CD3EC4AE21E7D2CD00BB9AB2 /* CryptoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3EC4AD21E7D2CD00BB9AB2 /* CryptoTableViewController.swift */; };
 		CD3EC4B021E7D43E00BB9AB2 /* CoinData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3EC4AF21E7D43E00BB9AB2 /* CoinData.swift */; };
-		CD3EC4B221E7DA6D00BB9AB2 /* Futured.TTF in Resources */ = {isa = PBXBuildFile; fileRef = CD3EC4B121E7D8D100BB9AB2 /* Futured.TTF */; };
 		CD3EC4B421E7DB2000BB9AB2 /* Credits in Resources */ = {isa = PBXBuildFile; fileRef = CD3EC4B321E7DB2000BB9AB2 /* Credits */; };
-		CD3EC4B821E7F11B00BB9AB2 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3EC4B721E7F11B00BB9AB2 /* UIViewExtension.swift */; };
+		CD3EC4C121E80F2700BB9AB2 /* CoinDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3EC4C021E80F2700BB9AB2 /* CoinDetailViewController.swift */; };
+		CD3EC4C321E952AF00BB9AB2 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3EC4C221E952AF00BB9AB2 /* AuthViewController.swift */; };
 		F465154282CABDABCFBC50C5 /* Pods_Captain_Crypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A99D359C2E20D56FF918A591 /* Pods_Captain_Crypto.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,9 +29,9 @@
 		CD3EC4A721E7CFAC00BB9AB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD3EC4AD21E7D2CD00BB9AB2 /* CryptoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTableViewController.swift; sourceTree = "<group>"; };
 		CD3EC4AF21E7D43E00BB9AB2 /* CoinData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinData.swift; sourceTree = "<group>"; };
-		CD3EC4B121E7D8D100BB9AB2 /* Futured.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = Futured.TTF; sourceTree = "<group>"; };
 		CD3EC4B321E7DB2000BB9AB2 /* Credits */ = {isa = PBXFileReference; lastKnownFileType = text; path = Credits; sourceTree = "<group>"; };
-		CD3EC4B721E7F11B00BB9AB2 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		CD3EC4C021E80F2700BB9AB2 /* CoinDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDetailViewController.swift; sourceTree = "<group>"; };
+		CD3EC4C221E952AF00BB9AB2 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,11 +87,11 @@
 				CD3EC49B21E7CFA900BB9AB2 /* AppDelegate.swift */,
 				CD3EC4AF21E7D43E00BB9AB2 /* CoinData.swift */,
 				CD3EC4AD21E7D2CD00BB9AB2 /* CryptoTableViewController.swift */,
+				CD3EC4C021E80F2700BB9AB2 /* CoinDetailViewController.swift */,
+				CD3EC4C221E952AF00BB9AB2 /* AuthViewController.swift */,
 				CD3EC4A221E7CFAC00BB9AB2 /* Assets.xcassets */,
 				CD3EC4A421E7CFAC00BB9AB2 /* LaunchScreen.storyboard */,
 				CD3EC4A721E7CFAC00BB9AB2 /* Info.plist */,
-				CD3EC4B121E7D8D100BB9AB2 /* Futured.TTF */,
-				CD3EC4B721E7F11B00BB9AB2 /* UIViewExtension.swift */,
 				CD3EC4B321E7DB2000BB9AB2 /* Credits */,
 			);
 			path = "Captain Crypto";
@@ -157,7 +157,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD3EC4B221E7DA6D00BB9AB2 /* Futured.TTF in Resources */,
 				CD3EC4B421E7DB2000BB9AB2 /* Credits in Resources */,
 				CD3EC4A621E7CFAC00BB9AB2 /* LaunchScreen.storyboard in Resources */,
 				CD3EC4A321E7CFAC00BB9AB2 /* Assets.xcassets in Resources */,
@@ -175,10 +174,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Captain Crypto/Pods-Captain Crypto-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftChart/SwiftChart.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftChart.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -213,7 +214,8 @@
 				CD3EC4B021E7D43E00BB9AB2 /* CoinData.swift in Sources */,
 				CD3EC4AE21E7D2CD00BB9AB2 /* CryptoTableViewController.swift in Sources */,
 				CD3EC49C21E7CFA900BB9AB2 /* AppDelegate.swift in Sources */,
-				CD3EC4B821E7F11B00BB9AB2 /* UIViewExtension.swift in Sources */,
+				CD3EC4C321E952AF00BB9AB2 /* AuthViewController.swift in Sources */,
+				CD3EC4C121E80F2700BB9AB2 /* CoinDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

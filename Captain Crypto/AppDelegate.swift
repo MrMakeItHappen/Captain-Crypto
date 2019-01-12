@@ -1,4 +1,5 @@
 import UIKit
+import LocalAuthentication
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -10,9 +11,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow(frame: UIScreen.main.bounds)
         
-        let cryptoTableVC = CryptoTableViewController()
-        let navigationVC = UINavigationController(rootViewController: cryptoTableVC)
-        window?.rootViewController = navigationVC
+        if LAContext().canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: nil) && UserDefaults.standard.bool(forKey: "secure") {
+            let authVC = AuthViewController()
+            window?.rootViewController = authVC
+        } else {
+            let cryptoTableVC = CryptoTableViewController()
+            let navigationVC = UINavigationController(rootViewController: cryptoTableVC)
+            window?.rootViewController = navigationVC
+        }
         window?.makeKeyAndVisible()
         
         return true
